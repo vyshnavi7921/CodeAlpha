@@ -1,0 +1,49 @@
+# ----------------------------------------
+# Name: Vyshnavi Pegada
+# Project: Personal Information Manager
+# Description: This program stores and displays
+# personal information using variables and user input.
+# ----------------------------------------
+
+# Welcome Message
+print("=" * 50)
+print("        PERSONAL INFORMATION MANAGER")
+print("=" * 50)
+
+# Step 1: Store Static Information
+name = "Vyshnavi Pegada"      # String - stores name
+age = 20                      # Integer - stores age
+city = "Hyderabad"            # String - stores city
+hobby = "Playing Badminton"   # String - stores hobby
+
+# Step 2: Get User Input
+favorite_food = input("Enter your favorite food: ").strip()
+favorite_color = input("Enter your favorite color: ").strip()
+
+# Basic Validation (check if input is empty)
+if favorite_food == "":
+    favorite_food = "Not Provided"
+
+if favorite_color == "":
+    favorite_color = "Not Provided"
+
+# Step 3: Calculate Age in Months
+age_in_months = age * 12
+
+# Step 4: Display Information
+print("\n" + "-" * 50)
+print("           YOUR PERSONAL DETAILS")
+print("-" * 50)
+
+print(f"Name            : {name}")
+print(f"Age             : {age} years")
+print(f"Age in Months   : {age_in_months} months")
+print(f"City            : {city}")
+print(f"Hobby           : {hobby}")
+print(f"Favorite Food   : {favorite_food.title()}")
+print(f"Favorite Color  : {favorite_color.title()}")
+
+print("-" * 50)
+print("Thank you for using Personal Information Manager!")
+print("=" * 50)
+
